@@ -272,7 +272,7 @@ class HealthPlugin : Plugin() {
                 "weight",
                 CapHealthPermission.READ_WEIGHT,
                 WeightRecord.WEIGHT_AVG
-            ) { it?.kilograms }
+            ) { it?.inKilograms }
             else -> throw RuntimeException("Unsupported dataType: $dataType")
         }
     }
